@@ -1,0 +1,8 @@
+.info-cont .show-mode {
+  direction: ltr;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(155deg, #00cfa5, #0070ff);
+}
+/*# sourceMappingURL=update.css.map */
